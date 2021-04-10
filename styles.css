@@ -395,10 +395,6 @@ div.footer h6 {
 
 @media only screen and (min-width: 360px) and (max-width: 768px){
 
-    body{
-        overflow-x: hidden;
-    }
-
     div.hero-content-heading {
         text-align: center;
         width: 100vw;
@@ -482,8 +478,8 @@ div.footer h6 {
         text-align: center;
         padding: 0.5rem;
         background: #304353;
-        position: absolute;
-        width: 50%;
+        position: fixed;
+        width: 190px;
         right: -192px;
         height: 100vh;
         z-index: 2;
@@ -596,6 +592,47 @@ div.footer h6 {
     .hamburger{
         display: inline-block;
     }
+
+    .mobile-navbar{
+        text-align: center;
+        padding: 0.5rem;
+        background: #304353;
+        position: absolute;
+        width: 190px;
+        right: -192px;
+        height: 100vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mobile-navbar.animate-nav{
+        right: 0;
+    }
+    
+    .mobile-navbar ul li{
+        margin: 10px 0;
+        padding: 20px;
+    }
+    
+    .mobile-navbar ul li a:hover{
+        padding: 0.9rem;
+    }
+    
+    .zuri-logo img{
+        margin: 0;
+    }
+
+    .zuri-logo{
+        flex: 1;
+    }
+
+    .mobile-links{
+        flex: 5;
+    }
+    
 
 }
 

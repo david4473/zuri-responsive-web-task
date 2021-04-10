@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const sideBar = document.querySelector(".mobile-navbar");
 const logo = document.querySelector(".logo");
+const body = document.querySelector('.body');
 
 let menuOpen = false;
 let slide = false;
