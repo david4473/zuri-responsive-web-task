@@ -1,10 +1,9 @@
 const hamburger = document.querySelector(".hamburger");
 const sideBar = document.querySelector(".mobile-navbar");
 const logo = document.querySelector(".logo");
-const body = document.querySelector('.body');
+const main = document.querySelector(".main")
 
 let menuOpen = false;
-let slide = false;
 
 hamburger.addEventListener('click', () => {
     if (!menuOpen) {
@@ -19,5 +18,14 @@ hamburger.addEventListener('click', () => {
         menuOpen = false;
         logo.style.color = '';
     }
+
+    main.addEventListener('click', () => {
+        if ( hamburger.classList.contains = 'animate') {
+            hamburger.classList.remove('animate');
+            sideBar.classList.remove('animate-nav');
+            logo.style.color = '';
+            menuOpen = false;
+        }
+    })
 
 })
